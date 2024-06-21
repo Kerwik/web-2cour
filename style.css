@@ -1,0 +1,253 @@
+*{
+    margin: auto;
+}
+body{
+    background-color: rgba(255, 255, 255, .5);
+    background-image:url(back.jpg);
+    backdrop-filter: blur(5px);
+    height:700vh;
+    -webkit-backdrop-filter:blur(5px);
+    transition-property: all;
+    transition-duration: 2s;
+}
+#button_theme{
+    background: #0000004d;
+    border: none;
+}
+#button_theme:focus{
+    outline:none;
+}
+#button_theme:active{
+    border-style:none;
+}
+#time_name{
+    color: #e8c3ff;
+    font-size: 7vh;
+}
+#namess{
+    color:#bab9d4 ;
+    font-size: 4vh;
+    padding-top: 2vh;
+    padding-right: 5vh;
+    padding-left: 5vh;
+    padding-bottom: 2vh;
+    width: fit-content;
+    width: -moz-fit-content;
+    float: right;
+    border-radius: 0.5vh;
+    background: #3e81ff73;
+    box-shadow: -1.3vh 1.6vh 1.6vh 0.9vh #191919;
+}
+#margin{
+    height: 10vh;
+}
+#top {
+    height: 7vh;
+    background-color: #fffafaf2;
+    box-shadow: 0px 0px 0.9vh 1.1vh #beb6ff59;
+    border-radius: 1vh;
+    width: 50vw;
+}
+#top marquee{
+    font-size: 4.4vh;
+    color: #6e80ff;
+}
+#main{
+    height: 108vh;
+    width: 50vw;
+}
+#theme{
+    display: flex;
+    flex-direction:column;
+    color: #bab9d4;
+    height: 6vh;
+    padding: 2vh;
+    padding-top: 7vh;
+    width: fit-content;
+    width: -moz-fit-content;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5vh;
+    font-weight: 900;
+}
+#subtheme{
+    color: #bab9d4;
+    font-size: 3vh;
+    width: fit-content;
+    width: -moz-fit-content;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+}
+#inform{
+    background-color: #fffafa2e;
+    margin-top: 10vh;
+    border-radius: 1vh;
+    height: 600vh;
+    box-shadow: inset 0px 0px 2vh 0.6vh #2c2a3e;
+}
+#name_theme{
+    color: #e2e2ff;
+    height: 6vh;
+    padding: 2vh;
+    padding-top: 4vh;
+    width: fit-content;
+    width: -moz-fit-content;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 6vh;
+    font-weight: 900;
+    
+}
+#main_text{
+    color: #d4d3fb;
+    font-size: 2.2vh;
+    padding: 3vh;
+    line-height: 3.7vh;
+}
+#main_q{
+    color: #d4d3fb;
+    font-size: 2.2vh;
+    padding: 3vh;
+    width: fit-content;
+    width: -moz-fit-content;
+    line-height: 3.7vh;
+}
+#fio{
+    width: 15vw;
+}
+#symbols{
+    width: fit-content;
+    width: -moz-fit-content;
+    color: #d6c1ff;
+    font-size: 1.8vh;
+    margin-bottom: 2vh;
+}
+#names{
+    color:snow;
+    background-color: yellowgreen;
+    width: 15vh;
+    font-size: 2.3vh;
+    height: 6vh;
+    border-radius: 1vh;
+    display: block;
+    margin-top: 2vh;
+}
+#names:focus{
+    outline: none;
+}
+#resTriangle{
+    text-align: center;
+    color: #d4d3fb;
+}
+#strings{
+    text-align: center;
+    color: #d4d3fb;
+}
+#resArr{
+    text-align: center;
+    color: #d4d3fb;
+}
+#block{
+    color: #d4d3fb;
+    margin: 2vh;
+    display: grid;
+    
+}
+#block label{
+    padding: 2vh;
+}
+#number{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+.box_number{
+    margin-top: 1vh;
+    width: 6.5vh;
+    height: 3vh;
+    font-size: 2.5vh;
+}
+.box{
+    height: 4vh;
+    width: 20vh;
+    font-size: 2vh;
+    box-shadow: 0px 0px 1.2vh 0.1vh #eaeaea85;
+}
+.box:hover{box-shadow: 0px 0px 1.2vh 0.1vh #677aff;}
+
+#timer{
+    width: fit-content;
+    width: -moz-fit-content;
+    color: #d4d3fb;
+    font-size: 3vh;
+    display: grid;
+}
+#block_q{
+    color: #d4d3fb;
+    font-size: 2vh;
+    width: 34vw;
+    margin-top: 1vh;
+}
+#block_q input{
+    margin-right: 1.5vh;
+}
+#quest1{
+    display: none;
+}
+#quest2{
+   display: none;
+}
+#quest3{
+   display: none;
+}
+#quest4{
+   display: none;
+}
+#quest5{
+   display: none;
+}
+#quest6{
+   display: none;
+}
+#quest7{
+   display: none;
+}
+#quest8{
+   display: none;
+}
+#quest9{
+   display: none;
+}
+#quest10{
+   display: none;
+}
+.krest{
+    color: red;
+    display: none;
+}
+.galc{
+    color: rgb(0, 255, 0);
+    display: none;
+}
+#resTest{
+    color: #d4d3fb;
+    font-size: 3vh;
+    margin-top: 3vh;
+}
+#button{
+    height: 15vh;
+    font-size: 2.5vh;
+    background-color: #ff1414;
+    box-shadow: 0px 0px 2vh 0.3vh;
+    border-radius: 35vh;
+    border-color: unset;
+    width: 15vh;
+    font-weight: 1000;
+}
+#button:focus{
+    outline: none;
+}
+#button:active{
+    box-shadow: 0px 0px 2vh 1vh;
+    height: 14vh;
+    width: 14vh;
+    font-size: 2.2vh;
+}

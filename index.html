@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WEB</title>
+</head>
+<body id="body" onload="getName()">
+     <button id="button_theme" style="display: none;" onclick="mainLoad()"><div id="time_name"></div></button> 
+     
+    <div id="margin">
+        <p id="namess">Гость</p>
+    </div>
+    <header id="top">
+        <marquee id="user" behavior="alternate" direction="right">
+            Вы гость, здравствуйте!!!
+        </marquee>
+        
+    </header>
+    <main id="main">
+        <div>
+            <p id="theme">Привет ты новичок в JS?</p>
+            <p id="subtheme">тогда тебе ниже↓</p>
+            
+        </div>
+        <div id="inform">
+            <p id="name_theme">Немного о JS.</p>
+            <p id="main_text">Язык программирования JavaScript придумали специально для того, чтобы создавать интерактивные сайты. Такие сайты реагируют на ваши действия: добавляют лайк, когда вы нажимаете на «сердечко»; загружают новые посты в ленту, когда вы доходите до конца страницы; показывают оповещения о новом сообщении или письме. Для этого и нужен JavaScript. Сегодня это один из самых популярных и востребованных языков программирования, поэтому он пригодится каждому веб-разработчику. Также как и с любым другим ЯП, с JS можно создать игру как 2Д так и 3Д, однако разработчики предпочитают более популярные языки, так как под них заточено большинство программ разработки.</p>
+            <p id="name_theme">Возможности JS.</p>
+            <div style="padding: 2vh;">
+                <p id="main_q">Представьтесь пожалуйста.</p>
+                <div id="block">
+                    <input required="" type="text" class="box" id="fio" pattern="[А-Яа-яЁё]+" placeholder="  Игорь  Войтенко">
+                </div>
+                <p id='symbols'>Максимум 20 символов</p>
+                <button id="names" onclick="SurName()">Готово!</button>
+            </div>
+            <div style="padding: 2vh;margin-top: 5vh;">
+                <p id="main_q">Введите основание и высоту треугольника.</p>
+                <div id="block">
+                    <label for="height">Высота</label>
+                    <input required="" class="box" type="text" id="height" pattern="^[ 0-9]+$" placeholder="0">
+                </div>
+                <div id="block">
+                    <label for="osnov">Основание</label>
+                    <input required="" class="box" type="text" id="osnov" pattern="^[ 0-9]+$" placeholder="0">
+                </div>
+                <div id="resTriangle"></div>
+                <button id="names" onclick="Triangle()">Готово!</button>
+            </div>
+            <div style="padding: 2vh;margin-top: 5vh;">
+                <p id="main_q">Введите 2 строки.</p>
+                <div id="block">
+                    <input required="" class="box" type="text" id="str1" pattern="[А-Яа-яЁё]+" placeholder="Строка">
+                </div>
+                <div id="strings"></div>
+                <div id="block">
+                    <input required="" class="box" type="text" id="str2" pattern="[А-Яа-яЁё]+" placeholder="Строка">
+                </div>
+                <button id="names" onclick="Strings()">Готово!</button>
+            </div>
+            <div style="padding: 2vh;margin-top: 5vh;">
+                <p id="main_q">Введите 5 элементов массива.</p>
+                <div id="block">
+                    <input required="" class="box" type="text" id="el1" pattern="^[ 0-9]+$" placeholder="1 Элемент">
+                </div>
+                <div id="block">
+                    <input required="" class="box" type="text" id="el2" pattern="^[ 0-9]+$" placeholder="2 Элемент">
+                </div>
+                <div id="block">
+                    <input required="" class="box" type="text" id="el3" pattern="^[ 0-9]+$" placeholder="3 Элемент">
+                </div>
+                <div id="block">
+                    <input required="" class="box" type="text" id="el4" pattern="^[ 0-9]+$" placeholder="4 Элемент">
+                </div>
+                <div id="block">
+                    <input required="" class="box" type="text" id="el5" pattern="^[ 0-9]+$" placeholder="5 Элемент">
+                </div>
+                <div id="resArr"></div>
+                <button id="names" onclick="Arrays()">Готово!</button>
+            </div>
+            <div style="padding: 2vh;margin-top: 5vh;">
+                <p id="main_q">Таймер</p>
+                <p id="timer">00:00:00</p>
+                <div id="number">
+                    <input type="number" id="hours" min="0" max="99" value="00" class="box_number">
+                    <input type="number" id="min" min="0" max="59" value="00" class="box_number">
+                    <input type="number" id="sec" min="0" max="59" value="00" class="box_number">
+                </div>
+                <div id="block">
+                    <input type="button" class="box" onclick="createObj.start()" value="Запуск">
+                </div>
+                <div id="block">  
+                    <input type="button" id="stop_timer" style="display:none;" class="box" onclick="createObj.stop()" value="Остановить">
+                </div>
+                <div id="block">  
+                    <input style="display:none;" type="button" id="nxt" class="box" onclick="createObj.next()" value="Продолжить">
+                </div>
+            </div>
+            <div style="padding: 2vh;margin-top: 5vh;">
+                <p  id="main_q">
+                    Тест на знание JS.</p>
+                    
+                <p id="main_q">
+                    1. Какие функции выполняет JS?</p>
+                <div id="block_q">
+                    <input onchange="click1(value)" class="cycle" name="dzen1" type="radio" value="0">Создает разметку на странице сайта<p class="krest" id="quest1" > ✖</p></div>
+                <div id="block_q">
+                    <input onchange="click1(value)" class="cycle" name="dzen1" type="radio" value="1">Отвечает за функции на стороне клиента <p class="galc"  id="quest1_1"> ✔</p></div>
+                <div id="block_q">
+                    <input onchange="click1(value)" class="cycle" name="dzen1" type="radio" value="0">Создает стилевое оформление сайта<p class="krest" id="quest1_2"> ✖</p></div>
+                
+                <div id="q2" style="display:none;">
+                    <p id="main_q">
+                        2. Какие циклы есть в языке JavaScript?</p>
+                    <div id="block_q">
+                        <input onchange="click2(value)" class="cycle" name="dzen2" type="radio" value="0">for, forMap, foreach, while, do while<p class="krest" id="quest2" > ✖</p></div>
+                    <div id="block_q">
+                        <input onchange="click2(value)" class="cycle" name="dzen2" type="radio" value="0">for, foreach, while<p class="krest" id="quest2_1" > ✖</p></div>
+                    <div id="block_q">
+                        <input onchange="click2(value)" class="cycle" name="dzen2" type="radio" value="1">for, while, do while<p class="galc" id="quest2_2"> ✔</p></div>    
+                </div>
+                <div id="q3" style="display:none;">
+                    <p id="main_q">
+                    3. После какого HTML тега нужно вставить JavaScript?</p>
+                    <div id="block_q">
+                        <input onchange="click3(value)" class="cycle" name="dzen3" type="radio" value="0">javascript<p id="quest3" class="krest" > ✖</p></div>
+                    <div id="block_q">
+                        <input onchange="click3(value)" class="cycle" name="dzen3" type="radio" value="0">js<p id="quest3_1" class="krest" > ✖</p></div>
+                    <div id="block_q">
+                        <input onchange="click3(value)" class="cycle" name="dzen3" type="radio" value="1">script<p id="quest3_2" class="galc" > ✔</p></div>    
+                </div>
+                <div id="q4" style="display:none;">
+                    <p id="main_q">
+                        4. JavaScript и Java это одно и тоже.</p>
+                        <div id="block_q">
+                            <input onchange="click4(value)" class="cycle" name="dzen4" type="radio" value="0">Да<p id="quest4" class="krest"  > ✖</p></div>
+                        <div id="block_q">
+                            <input onchange="click4(value)" class="cycle" name="dzen4" type="radio" value="1">Нет<p id="quest4_1" class="galc"> ✔</p></div>
+                        
+                </div>
+                <div id="q5" style="display:none;">
+                    <p id="main_q">
+                    5. Как начать WHILE цикл?</p>
+                    <div id="block_q">
+                        <input onchange="click5(value)" class="cycle" name="dzen5" type="radio" value="0">while (i <= 7; i++)<p id="quest5" class="krest" > ✖</p></div>
+                    <div id="block_q">
+                        <input onchange="click5(value)" class="cycle" name="dzen5" type="radio" value="1">while (i <= 7)<p  id="quest5_1" class="galc"> ✔</p></div>
+                    <div id="block_q">
+                        <input onchange="click5(value)" class="cycle" name="dzen5" type="radio" value="0">while i = 1 to 7<p id="quest5_2" class="krest"> ✖</p></div>
+                </div>
+                <div id="q6" style="display:none;">
+                    <p id="main_q">
+                    6.  Как вызвать функцию "myFunction"?</p>
+                    <div id="block_q">
+                        <input onchange="click6(value)" class="cycle" name="dzen6" type="radio" value="0">call function myFunction()<p class="krest" id="quest6" > ✖</p></div>
+                    <div id="block_q">
+                        <input onchange="click6(value)" class="cycle" name="dzen6" type="radio" value="0">call myFunction()<p class="krest" id="quest6_1" > ✖</p></div>
+                    <div id="block_q">
+                        <input onchange="click6(value)" class="cycle" name="dzen6" type="radio" value="1">myFunction()<p class="galc" id="quest6_2" > ✔</p></div>
+                </div>
+                <div id="q7" style="display:none;">
+                    <p id="main_q">
+                    7. Какой из приведенных кодов изменит содержание HTML елемента:</p>
+                    <div id="block_q">
+                        <input onchange="click7(value)" class="cycle" name="dzen7" type="radio" value="1">document.getElementById("main").innerHTML = "Hello World!";<p  id="quest7" class="galc"> ✔</p></div>
+                    <div id="block_q">
+                        <input onchange="click7(value)" class="cycle" name="dzen7" type="radio" value="0"> document.getElement("main").innerHTML = "Hello World!";<p id="quest7_1" class="krest" > ✖</p></div>
+                    <div id="block_q">
+                        <input onchange="click7(value)" class="cycle" name="dzen7" type="radio" value="0">document.getElementByName("main").innerHTML = "Hello World!";<p id="quest7_2" class="krest" > ✖</p></div>
+                </div>
+                <div id="q8" style="display:none;">
+                    <p id="main_q">
+                    8. Как объявить функцию в JavaScript?</p>
+                    <div id="block_q">
+                        <input onchange="click8(value)" class="cycle" name="dzen8" type="radio" value="0">function = New MyFunction()<p id="quest8" class="krest" > ✖</p></div>
+                    <div id="block_q">
+                        <input onchange="click8(value)" class="cycle" name="dzen8" type="radio" value="1">function MyFunction()<p  id="quest8_1" class="galc"> ✔</p></div>
+                    <div id="block_q">
+                        <input onchange="click8(value)" class="cycle" name="dzen8" type="radio" value="0"> function = MyFunction()<p id="quest8_2" class="krest" > ✖</p></div>
+                </div>
+                <div id="q9" style="display:none;">
+                    <p id="main_q">
+                    9. Как объявить несколько переменных  в 1 строку?</p>
+                    <div id="block_q">
+                        <input onchange="click9(value)" class="cycle" name="dzen9" type="radio" value="0">let a, let v;<p id="quest9" class="krest" > ✖</p></div>
+                    <div id="block_q">
+                        <input onchange="click9(value)" class="cycle" name="dzen9" type="radio" value="0">let a = let b;<p id="quest9_1" class="krest" > ✖</p></div>
+                    <div id="block_q">
+                        <input onchange="click9(value)" class="cycle" name="dzen9" type="radio" value="1">let a,b;<p  id="quest9_2" class="galc" > ✔</p></div>
+                    <div id="block_q">
+                        <input onchange="click9(value)" class="cycle" name="dzen9" type="radio" value="0">a,b,c,d= let;<p id="quest9_3" class="krest" > ✖</p></div>
+                </div>
+                <div id="q10" style="display:none;"><p id="main_q">
+                    10. Как увеличить размер массива?</p>  
+                    <div id="block_q">
+                        <input onchange="click10(value)" class="cycle" name="dzen10" type="radio" value="0">new Array[]<p id="quest10" class="krest" > ✖</p></div>
+                    <div id="block_q">
+                        <input onchange="click10(value)" class="cycle" name="dzen10" type="radio" value="1">размеры автоматически увеличиваются<p class="galc"  id="quest10_1"> ✔</p></div>
+                    <div id="block_q">
+                        <input onchange="click10(value)" class="cycle" name="dzen10" type="radio" value="0">через указатели или Malloc,Realloc и т.д<p class="krest" id="quest10_2" > ✖</p></div>
+                    </div>
+                    <div id="resTest" style="display: none;">Ваш результат: </div>
+                </div>
+                    
+                <div style="padding: 2vh;margin-top: 5vh;width: fit-content;width: -moz-fit-content;">
+                    <button id="button" onclick="waitTheme()">Заставка</button>
+                </div>
+            </div> 
+        </div>
+    </main>
+<script src="script.js"></script>
+</body>
